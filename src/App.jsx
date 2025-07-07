@@ -8,7 +8,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import NavMenu from "./components/NavMenu";
 import Footer from "./components/Footer";
-import './main.jsx';
+ 
 
 
 export default function App() {
