@@ -1,0 +1,78 @@
+
+@import "tailwindcss";
+ 
+
+:root {
+  /* Charcoal shades */
+  --charcoal-100: #080e11;
+  --charcoal-200: #0f1c22;
+  --charcoal-300: #172b32;
+  --charcoal-400: #1f3943;
+  --charcoal-500: #264653;
+  --charcoal-600: #3f7489;
+  --charcoal-700: #609db6;
+  --charcoal-800: #95bece;
+  --charcoal-900: #cadee7;
+
+  /* Persian Green shades */
+  --persian-green-100: #081f1d;
+  --persian-green-200: #113f39;
+  --persian-green-300: #195e56;
+  --persian-green-400: #217e73;
+  --persian-green-500: #2a9d8f;
+  --persian-green-600: #3acbba;
+  --persian-green-700: #6cd8cb;
+  --persian-green-800: #9de5dc;
+  --persian-green-900: #cef2ee;
+}
+
+/* Background Utilities */
+[class*="bg-charcoal-"] {
+  color: white;
+}
+.bg-charcoal-100 { background-color: var(--charcoal-100); }
+.bg-charcoal-200 { background-color: var(--charcoal-200); }
+.bg-charcoal-300 { background-color: var(--charcoal-300); }
+.bg-charcoal-400 { background-color: var(--charcoal-400); }
+.bg-charcoal-500 { background-color: var(--charcoal-500); }
+.bg-charcoal-600 { background-color: var(--charcoal-600); }
+.bg-charcoal-700 { background-color: var(--charcoal-700); }
+.bg-charcoal-800 { background-color: var(--charcoal-800); }
+.bg-charcoal-900 { background-color: var(--charcoal-900); }
+
+.bg-persian-100 { background-color: var(--persian-green-100); }
+.bg-persian-200 { background-color: var(--persian-green-200); }
+.bg-persian-300 { background-color: var(--persian-green-300); }
+.bg-persian-400 { background-color: var(--persian-green-400); }
+.bg-persian-500 { background-color: var(--persian-green-500); }
+.bg-persian-600 { background-color: var(--persian-green-600); }
+.bg-persian-700 { background-color: var(--persian-green-700); }
+.bg-persian-800 { background-color: var(--persian-green-800); }
+.bg-persian-900 { background-color: var(--persian-green-900); }
+
+/* Text color variants */
+.text-charcoal-800 { color: var(--charcoal-900); }
+.text-charcoal-100 { color: var(--charcoal-100); }
+.text-persian-500 { color: var(--persian-green-500); }
+.text-persian-300 { color: var(--persian-green-300); }
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

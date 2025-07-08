@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 
 const positions = [
@@ -30,7 +31,7 @@ const positions = [
 export default function Experience() {
   return (
     <section id="experience">
-      <h2 className="text-3xl font-semibold mb-6">Professional Experience</h2>
+      <h2 className="text-3xl font-semibold mb-6 bg-">Professional Experience</h2>
       <div className="space-y-8">
         {positions.map(pos => (
           <div key={pos.title} className="border-l-4 border-blue-500 pl-4">
